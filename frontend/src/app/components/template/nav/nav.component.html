@@ -2,7 +2,7 @@
   <mat-sidenav #sidenav class="sidenav" mode="side" closed fixedInViewport="true"
     fixedTopGap="100">
     <mat-list class="mat-list">
-      <a mat-list-item href="">
+      <a mat-list-item routerLink="/">
         <i class="material-icons">home</i>
         Home
       </a>
@@ -20,6 +20,7 @@
     <button mat-icon-button (click)="sidenav.toggle()" class="mat-nav-button">
       <i class="material-icons">menu</i>
     </button>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
