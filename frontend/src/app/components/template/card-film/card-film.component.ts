@@ -18,4 +18,9 @@ export class CardFilmComponent implements OnInit {
     })
   }
 
+  selectFilm(film: Film): void{
+    this.service.setFilm(film);
+    this.service.setPrice(film.price);
+  }
+
 }
