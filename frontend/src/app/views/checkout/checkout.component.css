@@ -1,0 +1,61 @@
+.mat-card-main{
+  padding: 3px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.mat-card-title{
+  margin-left: 8px;
+}
+.mat-card-title >h2,h3{
+  margin-left: 8px;
+}
+.mat-card-content{
+  margin-left: 5px;
+}
+.total{
+  margin: 8px;
+}
+.form{
+  position: relative;
+  margin: 8px;
+}
+.mat-card-list{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.mat-card-list>h2,h3{
+  margin-left: 8px;
+}
+.mat-card-film{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.mat-card-content>h2,h3{
+  margin-left: 8px;
+}
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 8px;
+}
+
+.form-full-width {
+  width: 100%;
+}
+.mat-cancel{
+  background-color: #eb3f5b;
+  color: #f2f2f2;
+}
+
+.mat-pay{
+  margin: 0 15px;
+}
+
+.hint{
+  color: rgb(170, 135, 235);
+}

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Film } from '../list-films/film.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,16 @@ export class CheckoutService {
   private _priceHandler: number = 0;
   private _filmHandler!: Film ;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private snackBar: MatSnackBar) { }
+
+  showMessage(msg: string, isError: boolean = false):void{
+    this.snackBar.open(msg, "close", {
+      duration: 3000,
+      horizontalPosition: "center",
+      verticalPosition:"bottom",
+      panelClass: isError ? ['success'] : ['error'],
+    })
+  }
 
   getPrice(): number{
     return this._priceHandler;

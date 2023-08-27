@@ -10,6 +10,7 @@ import { CheckoutService } from '../checkout/checkout.service';
 export class ListFilmsComponent implements OnInit {
 
   listFilms: Film[] = [];
+  listSelectedFilms!: number;
 
   constructor(private service: CheckoutService){}
 
@@ -17,5 +18,9 @@ export class ListFilmsComponent implements OnInit {
     this.service.getListFilms().subscribe((film) => {
       this.listFilms = film;
     })
+  }
+
+  toggleBadgeVisibility(){
+
   }
 }
