@@ -1,20 +1,20 @@
 .mat-card-main{
   padding: 3px;
+  margin-bottom: 10px;
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.mat-card-title{
-  margin-left: 8px;
+.card-title_title{
+  font-size: 1.5rem;
 }
-.mat-card-title >h2,h3{
+
+h2,h3{
   margin-left: 8px;
 }
 .mat-card-content{
   margin-left: 5px;
 }
-.total{
-  margin: 8px;
-}
+
 .form{
   position: relative;
   margin: 8px;
@@ -28,12 +28,7 @@
 .mat-card-list>h2,h3{
   margin-left: 8px;
 }
-.mat-card-film{
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
+
 .mat-card-content>h2,h3{
   margin-left: 8px;
 }
@@ -54,8 +49,34 @@
 
 .mat-pay{
   margin: 0 15px;
+  background-color: #4cd62b;
+  color: #f2f2f2;
 }
 
 .hint{
   color: rgb(170, 135, 235);
+}
+.material-icons{
+  padding: 5px;
+}
+.actions-container{
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mat-card-film{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 8px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

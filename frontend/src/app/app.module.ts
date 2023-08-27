@@ -13,6 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatBadgeModule} from '@angular/material/badge';
+import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
@@ -46,7 +48,9 @@ import { CheckoutComponent } from './views/checkout/checkout.component';
     MatButtonModule,
     MatButtonToggleModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatBadgeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

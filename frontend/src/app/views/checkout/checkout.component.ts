@@ -15,6 +15,7 @@ export class CheckoutComponent implements OnInit {
   disabled = false;
   hide = true;
   form: any;
+  client: any = {};
 
   constructor(private checkoutService: CheckoutService, private route: Router){}
 
@@ -48,9 +49,18 @@ export class CheckoutComponent implements OnInit {
   }
 
   payment(){
-    this.checkoutService.showMessage("Payment!", true);
-    this.excludeAll();
-    this.route.navigate(['../list-films']);
+    if(
+      this.client.adress === undefined ||
+      this.client.name === undefined ||
+      this.client.password === undefined
+    ){
+      this.checkoutService.showMessage('Por favor digite dados validos', false);
+    }else{
+      this.checkoutService.showMessage(`Pagamento efetuado com sucesso, boa escolha!
+      Confirmado Pedido: Para ${this.client.address} por ${this.client.name}`, true);
+      this.excludeAll();
+      this.route.navigate(['../list-films']);
+    }
   }
 
   cancel():void{
